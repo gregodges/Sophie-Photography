@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophie Photographies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="top_bar">
+            <a href="#"><img class="logo" src="img/logo.png" alt=""></a>
+            <div class="top_bar_right">
+                <a href="#about">Qui suis-je</a>
+                <a href="#creations">Mes créations</a>
+                <a href="#tarifs">Tarifs</a>
+                <a href="#contact">Contactez-moi</a>
+            </div>
+        </nav>
+    </header>
+        <div class="banner">
+            <img class="img_banner" src="img/top.jpg" alt="">
+            <div class="banner_title">
+            <h1>Sophie Photographies</h1>
+            <h3>Vos photos, ma passion.</h3>
+            </div>
+        </div>
+        <main>
+            <article class="about_grid" id="about">
+                <div class="about_text">
+                    <h4>Qui suis-je?</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Illum cum neque pariatur laborum! Aperiam magnam quam, 
+                         assumenda eum totam laudantium, quisquam eius saepe dolorum
+                          mollitia odio, voluptatem quidem accusantium excepturi.
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Illum cum neque pariatur laborum! Aperiam magnam quam, 
+                         assumenda eum totam laudantium, quisquam eius saepe dolorum
+                          mollitia odio, voluptatem quidem accusantium excepturi
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Illum cum neque pariatur laborum! Aperiam magnam quam, 
+                         assumenda eum totam laudantium, quisquam eius saepe dolorum
+                          mollitia odio, voluptatem quidem accusantium exceptur <br><br>
+                          <cite>- Sophie Ipsum.</cite> 
+                        </p>
+                </div><div class="about_img">
+                    <img src="img/sophie.jpg" alt="">
+                </div>
+            </article>
+            <article class="creations" id="creations">
+                <div class="creations_title">
+                    <h4>Mes créations</h4>
+                </div>
+                <div class="creations_content">
+                    <img src="img/picture1.jpg" alt="">
+                    <img src="img/picture2.jpg" alt="">
+                    <img src="img/picture3.jpg" alt="">
+                    <img src="img/picture5.jpg" alt="">
+                    <img src="img/picture7.jpg" alt="">
+                    <img src="img/picture8.jpg" alt="">
+                 </div>
+            </article>
+            <article class="tarif_container" id="tarifs">
+                <h4 class="tarif_title">Tarifs</h4>
+                <table class="tarif_table">
+                    <thead>
+                        <th> Prestation </th>
+                        <th> Description </th>
+                        <th> Durée </th>
+                        <th> Prix</th>       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Portrait simple</td>
+                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit</td>
+                            <td> X Min.</td>
+                            <td>$20</td>
+                        </tr>
+                        <tr>
+                            <td>Portrait professionnelle</td>
+                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit</td>
+                            <td> X Min.</td>
+                            <td>$30</td>
+                        </tr>
+                        <tr>
+                            <td>Photo de groupe</td>
+                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit</td>
+                            <td> X Min.</td>
+                            <td>$20</td>
+                        </tr>
+                        <tr>
+                            <td>Mariage</td>
+                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit</td>
+                            <td> X Min.</td>
+                            <td>$20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <section class="form_container" id="contact">
+                <div class="form_title">
+                    <h4>Contactez-moi</h4>
+                </div>
+                <div class="form">
+                    <form>
+
+                        <label class="label" for="firstName">Prénom </label><input id="firstName" name="firstName" type="text">
+                        <label class="label" for="name">Nom</label><input id="name" name="name" type="text">
+                        <label class="label" for="email">E-Mail</label><input id="email" name="email" type="email">
+                        <label class="label" for="message">Message</label><input id="message" name="message" type="text">
+                         <label for="check"><input name="check" class="radio" type="checkbox" id="check" >J'accepte que mes données ci-dessus soit traitées à des fins de prise de contact commerciales.</label>
+
+                         <button class="form_btn" type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© Sophie Photographies <span id="date"></span> </p>
+        </footer>
+    <script>
+        const d = new Date();
+        document.getElementById("date").innerHTML = d.getFullYear();
+    </script>
+</body>
+</html>
+
+
